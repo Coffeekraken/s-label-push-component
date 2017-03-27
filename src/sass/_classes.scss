@@ -1,0 +1,54 @@
+/**
+ * @name 	SlabelPushComponent
+ * All the mixins used to generate the default style classes of the component
+ */
+
+/**
+ * Print out the bare and style component css
+ * @param 	{List<Color>} 		[$color=default primary secondary] 		The colors to generate
+ */
+@mixin s-label-push-classes(
+	$colors : default primary secondary
+) {
+	@include s-label-push-classes-bare();
+	@include s-label-push-classes-style($colors);
+}
+
+/**
+ * Print out the bare component css
+ */
+@mixin s-label-push-classes-bare() {
+	@include s-component('s-label-push') {
+		[is="#{s-component()}"] {
+			> input {
+				@include s-transition(fast);
+			}
+			> span {
+				padding: s-lnf(padding-horizontal) s-lnf(padding-vertical);
+				height: 1em + s-lnf(padding-horizontal) * 2;
+				@include s-transition(default left, default transform, fast opacity);
+			}
+		}
+	}
+}
+
+/**
+ * Print out the style component css
+ * @param 	{List<Color>} 		[$color=default primary secondary] 		The colors to generate
+ */
+@mixin s-label-push-classes-style(
+	$colors : default primary secondary
+) {
+	@include s-component('s-label-push') {
+		@each $color in $colors {
+			[is="#{s-component()}"][color="#{$color}"] {
+				> input[placeholder] ~ span,
+				> input[value] ~ span,
+				> input[has-value] ~ span,
+				> input:focus ~ span {
+					color: s-color($color);
+				}
+			}
+		}
+	}
+}
