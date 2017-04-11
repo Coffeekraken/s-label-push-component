@@ -26,6 +26,8 @@
     "watch": "npm-watch"
   },
   "keywords": [
+    "label",
+    "push",
     "webcomponent",
     "component",
     "html",
