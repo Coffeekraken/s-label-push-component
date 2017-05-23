@@ -9,7 +9,6 @@ require('coffeekraken-sugar/js/features/inputAdditionalAttributes');
  * @extends 	SWebComponent
  * Provide a nice label that will slide to the right of his input when the user has focus or content in it
  *
- * @styleguide 		Form / Label Push
  * @example 	html
  * <label id="s-label-push">
  * 	<input type="text" class="form-input" />
