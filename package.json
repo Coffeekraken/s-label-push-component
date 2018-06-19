@@ -1,6 +1,6 @@
 {
   "name": "coffeekraken-s-label-push-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provide a nice label that will slide to the right of his input when the user has focus or content in it",
   "main": "dist/index.js",
   "homepage": "http://coffeekraken.io",
