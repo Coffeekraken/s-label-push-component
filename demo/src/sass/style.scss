@@ -1,0 +1,20 @@
+@import 'node_modules/coffeekraken-sugar/index';
+@import 'node_modules/coffeekraken-s-typography-component/index';
+@import 'node_modules/coffeekraken-s-form-component/index';
+@import 'index';
+@include s-init();
+@include s-classes();
+@include s-form-classes();
+@include s-typography-classes();
+body {
+	padding: s-space(big);
+}
+@include s-label-push-classes(
+	$colors : default primary secondary success warning error info
+);
+label {
+	margin-bottom:s-space(default);
+}
+label > span {
+	font-weight:bold;
+}
