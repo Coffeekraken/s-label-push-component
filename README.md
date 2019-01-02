@@ -29,6 +29,8 @@
 
 Provide a nice label that will slide to the right of his input when the user has focus or content in it
 
+[![View demo](http://components.coffeekraken.io/assets/img/view-demo.png)](http://components.coffeekraken.io/app/s-label-push-component)
+
 ## Table of content
 
 1. **[Demo](http://components.coffeekraken.io/app/s-label-push-component)**
