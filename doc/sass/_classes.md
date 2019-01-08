@@ -11,6 +11,7 @@ All the mixins used to generate the default style classes of the component
 Print out the bare and style component css
 
 
+#### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $color  |  **{ List<Color> }**  |  The colors to generate  |  optional  |  default primary secondary
@@ -26,6 +27,7 @@ Print out the bare component css
 Print out the style component css
 
 
+#### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $color  |  **{ List<Color> }**  |  The colors to generate  |  optional  |  default primary secondary

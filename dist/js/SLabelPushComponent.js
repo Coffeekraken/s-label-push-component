@@ -8,9 +8,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _SWebComponent2 = require('coffeekraken-sugar/js/core/SWebComponent');
+var _sNativeWebComponent = require('coffeekraken-sugar/js/core/sNativeWebComponent');
 
-var _SWebComponent3 = _interopRequireDefault(_SWebComponent2);
+var _sNativeWebComponent2 = _interopRequireDefault(_sNativeWebComponent);
 
 var _style = require('coffeekraken-sugar/js/dom/style');
 
@@ -48,8 +48,8 @@ require('coffeekraken-sugar/js/features/inputAdditionalAttributes');
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 
-var SLabelPushComponent = function (_SWebComponent) {
-	_inherits(SLabelPushComponent, _SWebComponent);
+var SLabelPushComponent = function (_native) {
+	_inherits(SLabelPushComponent, _native);
 
 	function SLabelPushComponent() {
 		_classCallCheck(this, SLabelPushComponent);
@@ -224,6 +224,6 @@ var SLabelPushComponent = function (_SWebComponent) {
 	}]);
 
 	return SLabelPushComponent;
-}(_SWebComponent3.default);
+}((0, _sNativeWebComponent2.default)(HTMLLabelElement));
 
 exports.default = SLabelPushComponent;

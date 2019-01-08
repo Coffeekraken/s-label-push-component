@@ -1,6 +1,6 @@
 {
   "name": "coffeekraken-s-label-push-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Provide a nice label that will slide to the right of his input when the user has focus or content in it",
   "main": "dist/index.js",
   "homepage": "http://coffeekraken.io",
@@ -63,15 +63,15 @@
     ]
   },
   "dependencies": {
-    "coffeekraken-sugar": "^1.0.0",
     "coffeekraken-s-form-component": "^1.0.3",
-    "coffeekraken-s-typography-component": "^1.0.1"
+    "coffeekraken-s-typography-component": "^1.0.1",
+    "coffeekraken-sugar": "^1.0.37"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-jest": "^23.0.1",
-    "babel-loader": "^7.1.4",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-export-default": "^7.0.0-alpha.20",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -82,9 +82,9 @@
     "coffeekraken-scripts-stack": "^1.0.1",
     "git-changelog": "^1.1.2",
     "http-server": "^0.11.1",
-    "jest": "^23.1.0",
-    "node-sass": "^4.0.0",
-    "webpack": "^4.0.0",
-    "webpack-cli": "^3.0.3"
+    "jest": "^23.6.0",
+    "node-sass": "^4.11.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1"
   }
 }

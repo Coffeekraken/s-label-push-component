@@ -58,7 +58,7 @@ module.exports = {
 			`
 		},
 		css : {
-			language : 'sass',
+			language : 'scss',
 			data : `
 				@import 'node_modules/coffeekraken-sugar/index';
 				@import 'node_modules/coffeekraken-s-typography-component/index';
