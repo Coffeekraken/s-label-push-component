@@ -12,4 +12,4 @@ Provide a nice label that will slide to the right of his input when the user has
 	<span>My cool label</span>
 </label>
 ```
-Author : Olivier Bossel <olivier.bossel@gmail.com>
+Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com)

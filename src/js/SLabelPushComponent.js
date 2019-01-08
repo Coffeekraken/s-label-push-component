@@ -1,4 +1,4 @@
-import SWebComponent from 'coffeekraken-sugar/js/core/SWebComponent'
+import native from 'coffeekraken-sugar/js/core/sNativeWebComponent'
 import __style from 'coffeekraken-sugar/js/dom/style'
 import __textWidth from 'coffeekraken-sugar/js/dom/textWidth'
 import __getStyleProperty from 'coffeekraken-sugar/js/dom/getStyleProperty'
@@ -18,7 +18,7 @@ require('coffeekraken-sugar/js/features/inputAdditionalAttributes');
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 
-export default class SLabelPushComponent extends SWebComponent {
+export default class SLabelPushComponent extends native(HTMLLabelElement) {
 
 	/**
 	 * Default css
